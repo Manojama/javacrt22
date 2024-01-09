@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+class Test
+{
+    public static void main(String[] args)throws Exception
+    {
+        
+        Scanner s=new Scanner(System.in);
+        int admo,mat,phy,che,tot,avg;
+        String name;
+        System.out.println("enter admno");
+        admno=s.nextInt();
+       System.out.println("Enter name");
+       name=s.nextInt();
+       System.out.println("enter 3 sub marks");
+       mat=s.nextInt();
+       phy=s.nextInt();
+       che=s.nextInt();
+       tot=s.nextInt();
+       avg=s.nextInt();
+       PrintWriter p1=new PrintWriter("Student.txt");
+       p1.println("Admssion no="+admno);
+       p1.println("Name="+name);
+       p1.println("Maths="+mat);
+       p1.println("Physics="+phy);
+       p1.println("Chemistry="+che);
+       p1.println("Total="+tot);
+       p1.println("Aerage="+avg);
+       p1.close();
+    }
+}
+            
